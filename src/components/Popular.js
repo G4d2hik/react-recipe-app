@@ -23,7 +23,7 @@ function Popular(props) {
 
             localStorage.setItem('popular', JSON.stringify(data.recipes))
             setPopular(data.recipes)
-            console.log(data.recipes);
+
         }
     }
 
@@ -32,7 +32,7 @@ function Popular(props) {
             <Wrapper  >
                 <h3>Популярные варианты</h3>
                 <Splide options={{
-                    perPage: 3,
+                    perPage: 4,
                     arrows: false,
                     pagination: false,
                     drag: 'free',
@@ -60,7 +60,7 @@ const Wrapper = styled.div`
 margin: 4rem 0 rem;
 `
 const Card = styled.div`
-min-height:25rem;
+min-height:20rem;
 border-radius:2rem;
 overflow:hidden;
 position:relative;
